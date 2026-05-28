@@ -66,7 +66,7 @@ export function CaseStudies() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.8, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.8, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
               className="group relative grid md:grid-cols-[100px_1fr_auto] gap-6 md:gap-12 items-start p-6 md:p-10 rounded-2xl border border-border bg-card glow-border hover:border-primary/40 transition-colors"
             >
               <div className="font-mono text-xs text-muted-foreground">

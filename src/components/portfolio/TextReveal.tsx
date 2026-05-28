@@ -9,7 +9,7 @@ interface Props {
 
 export function TextReveal({ text, className = "", delay = 0, as = "h1" }: Props) {
   const words = text.split(" ");
-  const Wrapper = motion[as];
+  const Wrapper = motion[as] as typeof motion.h1;
   return (
     <Wrapper
       className={className}
