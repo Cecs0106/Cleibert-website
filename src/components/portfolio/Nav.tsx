@@ -13,7 +13,7 @@ export function Nav() {
     >
       <div className="mx-auto max-w-7xl flex items-center justify-between">
         <a href="#top" className="font-display text-lg font-bold tracking-tighter">
-          cleibert<span className="text-primary">.</span>
+          Cleibert<span className="text-primary">.</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#stack" className="hover:text-foreground transition-colors">Stack</a>
