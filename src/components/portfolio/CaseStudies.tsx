@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import aionImg from "@/assets/project-aion.jpg";
+import imperiumImg from "@/assets/project-imperium.jpg";
+import nextwrldImg from "@/assets/project-nextwrld.jpg";
 
 interface Study {
   index: string;
@@ -10,6 +13,7 @@ interface Study {
   impact: string;
   metric: string;
   tags: string[];
+  image: string;
 }
 
 const studies: Study[] = [
@@ -22,6 +26,7 @@ const studies: Study[] = [
     impact: "Reducción del 30% en la morosidad mediante control de accesos automatizado.",
     metric: "-30%",
     tags: ["Vue.js", "SaaS", "Multi-tenant"],
+    image: aionImg,
   },
   {
     index: "02",
@@ -32,6 +37,7 @@ const studies: Study[] = [
     impact: "100% de ventas automatizadas y control de acceso mediante códigos QR.",
     metric: "100%",
     tags: ["Stripe", "WooPayments", "QR Access"],
+    image: imperiumImg,
   },
   {
     index: "03",
@@ -42,6 +48,7 @@ const studies: Study[] = [
     impact: "Sitio institucional listo para escalar a producto, con tiempos de carga sub-segundo.",
     metric: "<1s",
     tags: ["React", "Performance", "AI-Assisted"],
+    image: nextwrldImg,
   },
 ];
 
@@ -67,18 +74,18 @@ export function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as const }}
-              className="group relative grid md:grid-cols-[100px_1fr_auto] gap-6 md:gap-12 items-start p-6 md:p-10 rounded-2xl border border-border bg-card glow-border hover:border-primary/40 transition-colors"
+              className="group relative grid md:grid-cols-[100px_1.2fr_1fr] gap-6 md:gap-10 items-stretch p-6 md:p-8 rounded-2xl border border-border bg-card glow-border hover:border-primary/40 transition-colors"
             >
               <div className="font-mono text-xs text-muted-foreground">
                 <div className="text-primary">{s.index}</div>
                 <div className="mt-2">{s.role}</div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-5">
                 <h3 className="font-display text-3xl md:text-5xl font-bold tracking-tight group-hover:text-primary transition-colors">
                   {s.name}
                 </h3>
-                <div className="grid sm:grid-cols-3 gap-6">
+                <div className="grid sm:grid-cols-3 gap-5">
                   {[
                     { label: "Challenge", value: s.challenge },
                     { label: "Solution", value: s.solution },
@@ -90,20 +97,36 @@ export function CaseStudies() {
                     </div>
                   ))}
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {s.tags.map((t) => (
-                    <span key={t} className="px-3 py-1 rounded-full text-xs font-mono border border-border">
-                      {t}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex flex-wrap gap-2">
+                    {s.tags.map((t) => (
+                      <span key={t} className="px-3 py-1 rounded-full text-xs font-mono border border-border">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="font-display text-3xl font-bold text-primary tabular-nums md:hidden">
+                    {s.metric}
+                  </div>
                 </div>
               </div>
 
-              <div className="flex md:flex-col items-end gap-4 justify-between md:justify-start">
-                <div className="font-display text-4xl md:text-6xl font-bold text-primary tabular-nums">
+              <div className="relative overflow-hidden rounded-xl border border-border bg-surface aspect-[4/3] md:aspect-auto">
+                <img
+                  src={s.image}
+                  alt={`${s.name} preview`}
+                  loading="lazy"
+                  width={1280}
+                  height={896}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                <div className="absolute top-3 right-3 flex items-center gap-2 px-2.5 py-1 rounded-full bg-background/80 backdrop-blur border border-border">
+                  <ArrowUpRight className="size-3.5 text-primary group-hover:rotate-45 transition-transform duration-500" />
+                </div>
+                <div className="absolute bottom-3 left-3 font-display text-4xl font-bold text-primary tabular-nums hidden md:block">
                   {s.metric}
                 </div>
-                <ArrowUpRight className="size-6 text-muted-foreground group-hover:text-primary group-hover:rotate-45 transition-all duration-500" />
               </div>
             </motion.article>
           ))}
