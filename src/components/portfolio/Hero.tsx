@@ -23,12 +23,12 @@ export function Hero() {
           </motion.div>
 
           <TextReveal
-            text="Code that scales."
+            text="Código escalable."
             as="h1"
             className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance"
           />
           <TextReveal
-            text="Systems that run."
+            text="Sistemas que funcionan."
             as="h1"
             delay={0.3}
             className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance text-primary"
