@@ -19,7 +19,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 mb-8 px-3 py-1.5 rounded-full border border-border bg-surface/50 backdrop-blur text-xs font-mono text-muted-foreground"
           >
             <span className="size-1.5 rounded-full bg-primary shadow-glow" />
-            Available for select engagements · 2026
+            Available for select engagements cecs · 2026
           </motion.div>
 
           <TextReveal
