@@ -19,7 +19,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 mb-8 px-3 py-1.5 rounded-full border border-border bg-surface/50 backdrop-blur text-xs font-mono text-muted-foreground"
           >
             <span className="size-1.5 rounded-full bg-primary shadow-glow" />
-            Available for select engagements cecs · 2026
+            Disponible para proyectos seleccionados · 2026
           </motion.div>
 
           <TextReveal
@@ -40,7 +40,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 1 }}
             className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed"
           >
-            Desarrollador Web y Co-fundador especializado en convertir flujos operativos complejos en arquitecturas de software fluidas.
+            Desarrollador Web especializado en convertir flujos operativos complejos en arquitecturas de software fluidas.
           </motion.p>
 
           <motion.div
@@ -50,10 +50,10 @@ export function Hero() {
             className="mt-10 flex flex-wrap items-center gap-4"
           >
             <MagneticButton href="#contact" variant="primary">
-              Start a project <ArrowUpRight className="size-4" />
+              Iniciar proyecto <ArrowUpRight className="size-4" />
             </MagneticButton>
             <MagneticButton href="#work" variant="ghost">
-              View work
+              Ver trabajo
             </MagneticButton>
           </motion.div>
 
@@ -79,15 +79,6 @@ export function Hero() {
                 <Icon className="size-5" />
               </a>
             ))}
-            <a
-              href="https://x.com/Cecs0106"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-              className="text-muted-foreground hover:text-primary transition-colors text-sm font-bold"
-            >
-              X
-            </a>
           </motion.div>
         </div>
 
@@ -109,7 +100,7 @@ export function Hero() {
             <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-xs font-mono">
               <div className="text-foreground/90">
                 <div className="font-bold">Cleibert Castillo</div>
-                <div className="text-muted-foreground">Frontend · Co-founder</div>
+                <div className="text-muted-foreground">Desarrollador web</div>
               </div>
               <div className="text-primary">02° N</div>
             </div>

@@ -29,7 +29,7 @@ export function BentoStack() {
           <div>
             <div className="font-mono text-xs text-primary mb-3">/ 01 — STACK</div>
             <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight text-balance">
-              The toolkit behind <span className="text-primary">production-grade</span> systems.
+              Las tecnologías detrás de <span className="text-primary">sistemas robustos</span> y escalables.
             </h2>
           </div>
         </div>
@@ -71,7 +71,7 @@ export function BentoStack() {
             <ShoppingCart className="size-6 text-primary" />
             <div>
               <div className="font-mono text-xs text-muted-foreground mb-1">COMMERCE</div>
-              <div className="font-display text-2xl font-bold">WordPress · WooCommerce</div>
+              <div className="font-display text-2xl font-bold">WordPress · WooCommerce · Shopify</div>
             </div>
           </Cell>
 
@@ -80,7 +80,7 @@ export function BentoStack() {
             <div>
               <div className="font-mono text-xs text-muted-foreground mb-1">PAYMENTS</div>
               <div className="font-display text-2xl font-bold">
-                Stripe <span className="text-muted-foreground">+</span> WooPayments
+                Stripe <span className="text-muted-foreground">+</span> WooPayments <span className="text-muted-foreground">+</span> PayPal
               </div>
               <div className="text-sm text-muted-foreground mt-1">Integraciones automatizadas multi-moneda</div>
             </div>
@@ -90,7 +90,7 @@ export function BentoStack() {
             <Sparkles className="size-6 text-primary" />
             <div>
               <div className="font-mono text-xs text-muted-foreground mb-1">UX · AI</div>
-              <div className="font-display text-2xl font-bold">Prototipado &amp; optimización IA</div>
+              <div className="font-display text-2xl font-bold">Figma <span className="text-muted-foreground">+</span> Prototipado &amp; optimización IA</div>
               <div className="text-sm text-muted-foreground mt-1">Performance asistido por modelos generativos</div>
             </div>
           </Cell>
@@ -100,7 +100,7 @@ export function BentoStack() {
               <Cpu className="size-6 text-primary" />
               <div>
                 <div className="font-mono text-xs text-muted-foreground">PHILOSOPHY</div>
-                <div className="font-display text-xl font-semibold">Ship interfaces engineered for scale, not just for show.</div>
+                <div className="font-display text-xl font-semibold">El fracaso es una opción, pero el miedo a fracasar no lo es</div>
               </div>
             </div>
             <div className="font-mono text-xs text-muted-foreground">v2026.1</div>

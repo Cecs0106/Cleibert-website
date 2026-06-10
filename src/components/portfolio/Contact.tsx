@@ -10,7 +10,7 @@ export function Contact() {
       <div className="relative mx-auto max-w-5xl text-center">
         <div className="font-mono text-xs text-primary mb-4">/ 04 — CONTACT</div>
         <TextReveal
-          text="Let's build something scalable."
+          text="Vamos a construir algo escalable."
           as="h2"
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-balance"
         />
@@ -31,11 +31,11 @@ export function Contact() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-12 flex flex-wrap items-center justify-center gap-4"
         >
-          <MagneticButton href="mailto:hello@cleibert.dev" variant="primary">
-            Start a conversation <ArrowUpRight className="size-4" />
+          <MagneticButton href="mailto:cleibertc@gmail.com" variant="primary">
+            iniciar conversación <ArrowUpRight className="size-4" />
           </MagneticButton>
           <MagneticButton href="https://linkedin.com/in/cleibertcastillo" variant="ghost">
-            Schedule a meeting
+            ver linkedin
           </MagneticButton>
         </motion.div>
 
@@ -44,7 +44,7 @@ export function Contact() {
             { icon: Github, href: "https://github.com/Cecs0106", label: "GitHub" },
             { icon: Linkedin, href: "https://linkedin.com/in/cleibertcastillo", label: "LinkedIn" },
             { icon: Instagram, href: "https://instagram.com/cleibertecs", label: "Instagram" },
-            { icon: Mail, href: "mailto:hello@cleibert.dev", label: "Email" },
+            { icon: Mail, href: "mailto:cleibertc@gmail.com", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
@@ -57,15 +57,6 @@ export function Contact() {
               <Icon className="size-5" />
             </a>
           ))}
-          <a
-            href="https://x.com/Cecs0106"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="X"
-            className="text-sm font-bold hover:text-primary transition-colors"
-          >
-            X
-          </a>
         </div>
       </div>
 
